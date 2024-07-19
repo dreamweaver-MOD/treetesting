@@ -2,32 +2,48 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Interactive Tree</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jstree/3.3.12/themes/default/style.min.css" />
-  <style>
-    .node circle {
-      fill: #fff;
-      stroke: steelblue;
-      stroke-width: 3px;
-    }
-
-    .node text {
-      font: 12px sans-serif;
-    }
-
-    .link {
-      fill: none;
-      stroke: #ccc;
-      stroke-width: 2px;
-    }
-  </style>
+  <title>Course Scheduling System</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <div id="jstree"></div>
-  <svg width="960" height="500"></svg>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jstree/3.3.12/jstree.min.js"></script>
-  <script src="https://d3js.org/d3.v7.min.js"></script>
+  <div class="container">
+    <div class="header">
+      <h1>Module 4: CS (MON)</h1>
+      <div class="schedule">
+        <div class="course" id="course-02">
+          <h2>02</h2>
+          <p>Index: Thursday, Busch</p>
+          <p>11214, 10:20 AM - 12:20 PM</p>
+          <p>Staff</p>
+        </div>
+        <div class="course" id="course-01">
+          <h2>01</h2>
+          <p>Index: Thursday, Busch</p>
+          <p>11214, 10:20 AM - 12:20 PM</p>
+          <p>Staff</p>
+        </div>
+      </div>
+    </div>
+    <div class="main">
+      <div class="intro-to-cs">
+        <h2>Intro to CS</h2>
+        <p>No Pre-Req</p>
+        <p>4 Credits</p>
+        <p>Fulfilling: Q, X, Y</p>
+      </div>
+      <div class="future-semester">
+        <h2>Schedule for Future Semester</h2>
+      </div>
+      <div class="courses">
+        <div class="course" id="course-112">
+          <h2>112</h2>
+        </div>
+        <div class="course" id="course-205">
+          <h2>205</h2>
+        </div>
+      </div>
+    </div>
+  </div>
   <script src="script.js"></script>
 </body>
 </html>
